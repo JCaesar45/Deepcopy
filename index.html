@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepCopy AI - Advanced Object Cloning Engine</title>
+
+</head>
+
+<body>
+  <div class="bg-animation"></div>
+  <div class="particles" id="particles"></div>
+
+  <header class="header">
+    <h1>DeepCopy AI</h1>
+    <p class="subtitle">Advanced Object Cloning Engine with Quantum Precision</p>
+  </header>
+
+  <div class="container">
+    <div class="control-panel">
+      <h2 class="panel-title">
+        <span class="icon">⚡</span>
+        Object Input Terminal
+      </h2>
+
+      <div class="input-section">
+        <label class="input-label">Input Object (JSON Format)</label>
+        <textarea class="code-input" id="objectInput" placeholder='Enter your object here...
+Example: {
+  "name": "John Doe",
+  "age": 30,
+  "skills": ["JavaScript", "Python", "Go"],
+  "address": {
+    "city": "New York",
+    "zip": "10001"
+  }
+}'>{
+  "name": "John Doe",
+  "age": 30,
+  "skills": ["JavaScript", "Python", "Go"],
+  "address": {
+    "city": "New York",
+    "zip": "10001"
+  },
+  "metadata": {
+    "created": "2024-01-03",
+    "version": 1.0,
+    "tags": ["developer", "senior", "remote"]
+  }
+}</textarea>
+      </div>
+
+      <div class="button-group">
+        <button class="btn btn-primary" onclick="performDeepCopy()">
+          <span id="copyBtnText">Execute DeepCopy</span>
+        </button>
+        <button class="btn btn-secondary" onclick="loadExample()">Load Example</button>
+        <button class="btn btn-secondary" onclick="clearAll()">Clear All</button>
+      </div>
+
+      <div class="output-section">
+        <label class="input-label">DeepCopy Result</label>
+        <div class="output-display" id="outputDisplay">
+          Click "Execute DeepCopy" to clone your object...
+        </div>
+      </div>
+    </div>
+
+    <div class="visualizer">
+      <h2 class="panel-title">
+        <span class="icon">🔍</span>
+        Object Reference Visualizer
+      </h2>
+      <div id="objectVisualizer">
+        <p style="color: var(--text-secondary); text-align: center; margin-top: 2rem;">
+          Visual representation will appear here after deep copy...
+        </p>
+      </div>
+    </div>
+
+    <div class="stats-panel">
+      <div class="stat-item">
+        <span class="stat-value" id="objectSize">0</span>
+        <span class="stat-label">Object Size</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value" id="copyTime">0</span>
+        <span class="stat-label">Copy Time (ms)</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value" id="nestedLevels">0</span>
+        <span class="stat-label">Nested Levels</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value" id="isDeepCopy">✗</span>
+        <span class="stat-label">Deep Copy Status</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
